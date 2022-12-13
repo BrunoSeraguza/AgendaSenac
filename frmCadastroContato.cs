@@ -80,36 +80,47 @@ namespace AgendaSenac
 
         private void btSalvar_Click(object sender, EventArgs e)
         {
-            Contato contato = new Contato();
-            contato.Nome = txtNome.Text;
-            contato.Endereco= txtEndereco.Text;
-            contato.Cep = txtCep.Text;
-            contato.Email = txtEmail.Text;
-            contato.Bairro = txtBairro.Text;
-            contato.Cidade = txtCidade.Text;
-            contato.Estado = txtEstado.Text;
-            contato.Telefone = txtTelefone.Text;
-            String strConexao = "Data Source=DESKTOP-G18LE98;Initial Catalog=Agenda;Integrated Security=True";
-            Conexao conexao = new Conexao(strConexao);
-            DALContato dal = new DALContato(conexao);
-            if (this.operacao=="inserir")
+            try
             {
-                dal.Incluir(contato);
-                MessageBox.Show("O codigo gerado foi:"+contato.Codigo.ToString());
-                
-                
-            }
-            else
+                Contato contato = new Contato();
+                if(txtNome.Text.Length <= 0 ) 
+                {
+                    MessageBox.Show("Nome obrigatório");
+                    return;
+                }// Terminar de fazer o restante das validaçoes
+                contato.Nome = txtNome.Text;
+                contato.Endereco = txtEndereco.Text;
+                contato.Cep = txtCep.Text;
+                contato.Email = txtEmail.Text;
+                contato.Bairro = txtBairro.Text;
+                contato.Cidade = txtCidade.Text;
+                contato.Estado = txtEstado.Text;
+                contato.Telefone = txtTelefone.Text;
+                String strConexao = "Data Source=DESKTOP-G18LE98;Initial Catalog=Agenda;Integrated Security=True";
+                Conexao conexao = new Conexao(strConexao);
+                DALContato dal = new DALContato(conexao);
+                if (this.operacao == "inserir")
+                {
+                    dal.Incluir(contato);
+                    MessageBox.Show("O codigo gerado foi: " + contato.Codigo.ToString());
+
+
+                }
+                else
+                {
+                    contato.Codigo = Convert.ToInt32(txtCodigo.Text);
+                    //ALTERAR OS CONTATO QUE ESTA NA TELA
+                    dal.Alterar(contato);
+                    MessageBox.Show("Registro alterado!");
+
+                }
+
+                this.AlteraBotoes(1);
+                this.Limpar();
+            } catch (Exception erro)
             {
-                contato.Codigo = Convert.ToInt32(txtCodigo.Text);
-                //ALTERAR OS CONTATO QUE ESTA NA TELA
-                dal.Alterar(contato);
-                MessageBox.Show("Registro alterado!");
-
+                MessageBox.Show(erro.Message);
             }
-
-            this.AlteraBotoes(1);
-            this.Limpar();
 
         }
 
@@ -162,6 +173,11 @@ namespace AgendaSenac
                 this.Limpar();
 
             }
+        }
+
+        private void lblCidade_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

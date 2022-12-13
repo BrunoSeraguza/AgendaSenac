@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pDados = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.lblTelefone = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -60,6 +61,8 @@
             // 
             // pDados
             // 
+            this.pDados.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pDados.Controls.Add(this.label2);
             this.pDados.Controls.Add(this.txtTelefone);
             this.pDados.Controls.Add(this.lblTelefone);
             this.pDados.Controls.Add(this.txtEmail);
@@ -84,6 +87,16 @@
             this.pDados.TabIndex = 0;
             this.pDados.Paint += new System.Windows.Forms.PaintEventHandler(this.pDados_Paint);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei Light", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(475, 386);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(213, 19);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Desenvolvido por Bruno Seraguza";
+            // 
             // txtTelefone
             // 
             this.txtTelefone.Location = new System.Drawing.Point(428, 350);
@@ -94,15 +107,16 @@
             // lblTelefone
             // 
             this.lblTelefone.AutoSize = true;
+            this.lblTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefone.Location = new System.Drawing.Point(422, 331);
             this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(61, 16);
+            this.lblTelefone.Size = new System.Drawing.Size(73, 18);
             this.lblTelefone.TabIndex = 16;
             this.lblTelefone.Text = "Telefone";
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(33, 350);
+            this.txtEmail.Location = new System.Drawing.Point(25, 350);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(383, 22);
             this.txtEmail.TabIndex = 15;
@@ -110,15 +124,16 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(27, 331);
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Location = new System.Drawing.Point(22, 331);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(41, 16);
+            this.lblEmail.Size = new System.Drawing.Size(50, 18);
             this.lblEmail.TabIndex = 14;
             this.lblEmail.Text = "Email";
             // 
             // txtCep
             // 
-            this.txtCep.Location = new System.Drawing.Point(31, 130);
+            this.txtCep.Location = new System.Drawing.Point(25, 130);
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(226, 22);
             this.txtCep.TabIndex = 13;
@@ -126,9 +141,10 @@
             // lblCep
             // 
             this.lblCep.AutoSize = true;
-            this.lblCep.Location = new System.Drawing.Point(31, 111);
+            this.lblCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCep.Location = new System.Drawing.Point(22, 111);
             this.lblCep.Name = "lblCep";
-            this.lblCep.Size = new System.Drawing.Size(34, 16);
+            this.lblCep.Size = new System.Drawing.Size(42, 18);
             this.lblCep.TabIndex = 12;
             this.lblCep.Text = "CEP";
             // 
@@ -142,27 +158,30 @@
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
+            this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstado.Location = new System.Drawing.Point(384, 111);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(50, 16);
+            this.lblEstado.Size = new System.Drawing.Size(61, 18);
             this.lblEstado.TabIndex = 10;
             this.lblEstado.Text = "Estado";
             // 
             // txtCidade
             // 
-            this.txtCidade.Location = new System.Drawing.Point(28, 300);
+            this.txtCidade.Location = new System.Drawing.Point(25, 300);
             this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(660, 22);
+            this.txtCidade.Size = new System.Drawing.Size(663, 22);
             this.txtCidade.TabIndex = 9;
             // 
             // lblCidade
             // 
             this.lblCidade.AutoSize = true;
-            this.lblCidade.Location = new System.Drawing.Point(25, 281);
+            this.lblCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCidade.Location = new System.Drawing.Point(22, 281);
             this.lblCidade.Name = "lblCidade";
-            this.lblCidade.Size = new System.Drawing.Size(51, 16);
+            this.lblCidade.Size = new System.Drawing.Size(60, 18);
             this.lblCidade.TabIndex = 8;
             this.lblCidade.Text = "Cidade";
+            this.lblCidade.Click += new System.EventHandler(this.lblCidade_Click);
             // 
             // txtBairro
             // 
@@ -174,9 +193,10 @@
             // lblBairro
             // 
             this.lblBairro.AutoSize = true;
-            this.lblBairro.Location = new System.Drawing.Point(28, 216);
+            this.lblBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBairro.Location = new System.Drawing.Point(22, 216);
             this.lblBairro.Name = "lblBairro";
-            this.lblBairro.Size = new System.Drawing.Size(43, 16);
+            this.lblBairro.Size = new System.Drawing.Size(54, 18);
             this.lblBairro.TabIndex = 6;
             this.lblBairro.Text = "Bairro";
             // 
@@ -190,32 +210,34 @@
             // lblEndereco
             // 
             this.lblEndereco.AutoSize = true;
-            this.lblEndereco.Location = new System.Drawing.Point(25, 163);
+            this.lblEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEndereco.Location = new System.Drawing.Point(22, 163);
             this.lblEndereco.Name = "lblEndereco";
-            this.lblEndereco.Size = new System.Drawing.Size(66, 16);
+            this.lblEndereco.Size = new System.Drawing.Size(80, 18);
             this.lblEndereco.TabIndex = 4;
             this.lblEndereco.Text = "Endereco";
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(34, 76);
+            this.txtNome.Location = new System.Drawing.Point(25, 76);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(654, 22);
+            this.txtNome.Size = new System.Drawing.Size(663, 22);
             this.txtNome.TabIndex = 3;
             // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(31, 57);
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Location = new System.Drawing.Point(24, 57);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(44, 16);
+            this.lblNome.Size = new System.Drawing.Size(53, 18);
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome";
             // 
             // txtCodigo
             // 
             this.txtCodigo.Enabled = false;
-            this.txtCodigo.Location = new System.Drawing.Point(34, 32);
+            this.txtCodigo.Location = new System.Drawing.Point(25, 31);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(100, 22);
             this.txtCodigo.TabIndex = 1;
@@ -223,9 +245,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 12);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(24, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 16);
+            this.label1.Size = new System.Drawing.Size(62, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Codigo";
             // 
@@ -244,68 +267,89 @@
             // 
             // btCancelar
             // 
-            this.btCancelar.Location = new System.Drawing.Point(612, 37);
+            this.btCancelar.BackColor = System.Drawing.Color.AliceBlue;
+            this.btCancelar.Image = global::AgendaSenac.Properties.Resources.icons8_cancelar_2_40;
+            this.btCancelar.Location = new System.Drawing.Point(601, 5);
             this.btCancelar.Name = "btCancelar";
-            this.btCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btCancelar.Size = new System.Drawing.Size(85, 81);
             this.btCancelar.TabIndex = 5;
             this.btCancelar.Text = "Cancelar";
-            this.btCancelar.UseVisualStyleBackColor = true;
+            this.btCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btCancelar.UseVisualStyleBackColor = false;
             this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
             // 
             // btSalvar
             // 
-            this.btSalvar.Location = new System.Drawing.Point(496, 37);
+            this.btSalvar.BackColor = System.Drawing.Color.AliceBlue;
+            this.btSalvar.Image = global::AgendaSenac.Properties.Resources.icons8_salvar_48;
+            this.btSalvar.Location = new System.Drawing.Point(484, 3);
             this.btSalvar.Name = "btSalvar";
-            this.btSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btSalvar.Size = new System.Drawing.Size(85, 83);
             this.btSalvar.TabIndex = 4;
             this.btSalvar.Text = "Salvar";
-            this.btSalvar.UseVisualStyleBackColor = true;
+            this.btSalvar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btSalvar.UseVisualStyleBackColor = false;
             this.btSalvar.Click += new System.EventHandler(this.btSalvar_Click);
             // 
             // btExcluir
             // 
-            this.btExcluir.Location = new System.Drawing.Point(377, 37);
+            this.btExcluir.BackColor = System.Drawing.Color.AliceBlue;
+            this.btExcluir.Image = global::AgendaSenac.Properties.Resources.icons8_excluir_48;
+            this.btExcluir.Location = new System.Drawing.Point(370, 4);
             this.btExcluir.Name = "btExcluir";
-            this.btExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btExcluir.Size = new System.Drawing.Size(85, 81);
             this.btExcluir.TabIndex = 3;
             this.btExcluir.Text = "Excluir";
-            this.btExcluir.UseVisualStyleBackColor = true;
+            this.btExcluir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btExcluir.UseVisualStyleBackColor = false;
             this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
             // 
             // btAlterar
             // 
-            this.btAlterar.Location = new System.Drawing.Point(261, 38);
+            this.btAlterar.BackColor = System.Drawing.Color.AliceBlue;
+            this.btAlterar.Image = global::AgendaSenac.Properties.Resources.icons8_alterar_usuário_masculino_48;
+            this.btAlterar.Location = new System.Drawing.Point(260, 3);
             this.btAlterar.Name = "btAlterar";
-            this.btAlterar.Size = new System.Drawing.Size(75, 23);
+            this.btAlterar.Size = new System.Drawing.Size(85, 81);
             this.btAlterar.TabIndex = 2;
-            this.btAlterar.Text = "Alterar";
-            this.btAlterar.UseVisualStyleBackColor = true;
+            this.btAlterar.Text = "Alterar ";
+            this.btAlterar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btAlterar.UseVisualStyleBackColor = false;
             this.btAlterar.Click += new System.EventHandler(this.btAlterar_Click);
             // 
             // btLocalizar
             // 
-            this.btLocalizar.Location = new System.Drawing.Point(151, 37);
+            this.btLocalizar.BackColor = System.Drawing.Color.AliceBlue;
+            this.btLocalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLocalizar.Image = global::AgendaSenac.Properties.Resources.icons8_procurar_usuário_masculino_48;
+            this.btLocalizar.Location = new System.Drawing.Point(147, 3);
             this.btLocalizar.Name = "btLocalizar";
-            this.btLocalizar.Size = new System.Drawing.Size(75, 23);
+            this.btLocalizar.Size = new System.Drawing.Size(87, 81);
             this.btLocalizar.TabIndex = 1;
             this.btLocalizar.Text = "Localizar";
-            this.btLocalizar.UseVisualStyleBackColor = true;
+            this.btLocalizar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btLocalizar.UseVisualStyleBackColor = false;
             this.btLocalizar.Click += new System.EventHandler(this.btLocalizar_Click);
             // 
             // btInserir
             // 
-            this.btInserir.Location = new System.Drawing.Point(29, 38);
+            this.btInserir.BackColor = System.Drawing.Color.AliceBlue;
+            this.btInserir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInserir.Image = global::AgendaSenac.Properties.Resources.Inserir;
+            this.btInserir.Location = new System.Drawing.Point(26, 3);
             this.btInserir.Name = "btInserir";
-            this.btInserir.Size = new System.Drawing.Size(75, 23);
+            this.btInserir.Size = new System.Drawing.Size(91, 81);
             this.btInserir.TabIndex = 0;
             this.btInserir.Text = "Inserir";
-            this.btInserir.UseVisualStyleBackColor = true;
+            this.btInserir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btInserir.UseVisualStyleBackColor = false;
             this.btInserir.Click += new System.EventHandler(this.btInserir_Click);
             // 
             // frmCadastroContato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(782, 573);
             this.Controls.Add(this.pMenu);
             this.Controls.Add(this.pDados);
@@ -348,5 +392,6 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -80,17 +80,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -99,6 +100,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ícones\icons8-salvar-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ícones\icons8-alterar-usuário-masculino-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ícones\icons8-cancelar-2-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ícones\icons8-excluir-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ícones\icons8-procurar-usuário-masculino-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ícones\Inserir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ícones\icons8-contatos-94.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ícones\icons8-procurar-usuário-masculino-64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

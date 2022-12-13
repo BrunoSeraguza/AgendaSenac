@@ -36,5 +36,15 @@ namespace AgendaSenac
                 this.Close();
             }
         }
+
+        private void FormConsultaContatos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgDados_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
