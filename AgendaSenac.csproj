@@ -49,33 +49,33 @@
     <Compile Include="Conexao.cs" />
     <Compile Include="Contato.cs" />
     <Compile Include="DALContato.cs" />
-    <Compile Include="FormConsultaContatos.cs">
+    <Compile Include="Forms\FormConsultaContatos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormConsultaContatos.Designer.cs">
+    <Compile Include="Forms\FormConsultaContatos.Designer.cs">
       <DependentUpon>FormConsultaContatos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCadastroContato.cs">
+    <Compile Include="Forms\frmCadastroContato.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCadastroContato.Designer.cs">
+    <Compile Include="Forms\frmCadastroContato.Designer.cs">
       <DependentUpon>frmCadastroContato.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPrincipal.cs">
+    <Compile Include="Forms\frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPrincipal.Designer.cs">
+    <Compile Include="Forms\frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormConsultaContatos.resx">
+    <EmbeddedResource Include="Forms\FormConsultaContatos.resx">
       <DependentUpon>FormConsultaContatos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCadastroContato.resx">
+    <EmbeddedResource Include="Forms\frmCadastroContato.resx">
       <DependentUpon>frmCadastroContato.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPrincipal.resx">
+    <EmbeddedResource Include="Forms\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
